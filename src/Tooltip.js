@@ -176,7 +176,7 @@ class Tooltip extends React.Component<Props, State> {
             height: elementHeight,
           }}
         >
-          {this.props.children}
+          {/* {this.props.children} */}
         </View>
         {withPointer && this.renderPointer(tooltipStyle.top)}
         <View style={tooltipStyle}>{popover}</View>
