@@ -45,8 +45,9 @@ import Tooltip from 'rn-tooltip';
 * [`onClose`](#onClose)
 * [`onOpen`](#onOpen)
 * [`pointerColor`](#pointerColor)
+* [`pointerStyle`](#pointerStyle)
 * [`popover`](#popover)
-* [`toggleOnPress`](#toggleOnPress)
+* [`actionType`](#actionType)
 * [`width`](#width)
 * [`withOverlay`](#withOverlay)
 * [`overlayColor`](#withOverlay)
@@ -130,6 +131,14 @@ Color of tooltip pointer, it defaults to the
 
 ---
 
+### `pointerStyle`
+
+Passes style object to tooltip pointer view
+
+|      Type      |      Default      |
+| :------------: | :---------------: |
+| object (style) | inherited styling |
+
 ### `popover`
 
 Component to be rendered as the display container.
@@ -140,13 +149,13 @@ Component to be rendered as the display container.
 
 ---
 
-### `toggleOnPress`
+### `actionType`
 
-Flag to determine to toggle or not the tooltip on press.
+Flag to determine how the tooltip reacts to presses.
 
 |  Type   | Default |
 | :-----: | :-----: |
-| boolean |  true   |
+| press or none or longPress | press |
 
 ---
 
