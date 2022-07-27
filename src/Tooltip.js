@@ -1,19 +1,13 @@
 //  @flow
 
 import * as React from 'react';
-import {
-  TouchableOpacity,
-  Modal,
-  View,
-  ViewPropTypes as RNViewPropTypes,
-} from 'react-native';
+import { TouchableOpacity, Modal, View } from 'react-native';
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 import PropTypes from 'prop-types';
 
 import Triangle from './Triangle';
 import { ScreenWidth, ScreenHeight, isIOS } from './helpers';
 import getTooltipCoordinate from './getTooltipCoordinate';
-
-const ViewPropTypes = RNViewPropTypes || View.propTypes;
 
 type State = {
   isVisible: boolean,
